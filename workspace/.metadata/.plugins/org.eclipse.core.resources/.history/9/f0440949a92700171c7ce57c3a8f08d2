@@ -1,0 +1,17 @@
+
+public class variables {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String text =  "includes texts";
+		int wholeNumber = 123;
+		double decimalNumber = 3.141592653;
+		boolean isTrue = true;
+		
+		System.out.println("value is" + text);
+		System.out.println("value is") + wholeNumber;
+		System.out.println("value is" + decimalNumber);
+		System.out.println("value is" + isTrue);
+	}
+
+}

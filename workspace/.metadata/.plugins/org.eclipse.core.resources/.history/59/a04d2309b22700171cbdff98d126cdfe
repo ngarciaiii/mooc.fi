@@ -1,0 +1,14 @@
+
+public class variables {
+	public static void main(String[] arg) {
+		int chickens = 3;
+		double bacon = 5.5;
+		String tractor = "There is none!";
+		
+		System.out.println("In a nutshell: ");
+		System.outprintln(chickens);
+		System.outprintln(bacon);
+		System.outprintln(tractor);
+		
+	}
+}
