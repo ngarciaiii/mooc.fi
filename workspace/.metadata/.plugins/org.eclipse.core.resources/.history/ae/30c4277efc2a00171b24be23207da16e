@@ -1,0 +1,22 @@
+package usingScanner;
+
+import java.util.Scanner;
+
+public class week1_ex19_21 {
+	public static void main(String[] args) {
+		Scanner reader = new Scanner(System.in);
+		
+		//EXERCISE 19
+		System.out.print("How old are you?: ");
+		int age = Integer.parseInt(reader.nextLine());
+		
+		if (age > 0 && age < 121) {
+			System.out.println("Good age!");
+		} else {
+			System.out.println("Impossible!");
+		}
+		
+		
+	}
+	
+}
