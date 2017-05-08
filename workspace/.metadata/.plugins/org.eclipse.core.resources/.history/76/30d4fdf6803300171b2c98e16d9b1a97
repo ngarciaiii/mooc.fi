@@ -1,0 +1,51 @@
+package week2;
+
+import java.util.Scanner;
+
+public class week2_ex27_31{
+	public static void main(String[] args){
+		
+		Scanner reader = new Scanner(System.in);
+		
+		//EXERCISE 27		
+		int toHundred = 1;
+		
+		while (toHundred <= 100) {
+			System.out.println(toHundred);
+			toHundred++;
+		}
+	
+		
+		//EXERCISE 28
+		System.out.println();
+		int fromHundred = 100;
+		
+		while (fromHundred > 0) {
+			System.out.println(fromHundred);
+			fromHundred--;
+		}
+		
+		//EXERCISE 29
+		System.out.println();
+		int toHundredEven = 1;
+		
+		while (toHundredEven < 101) {
+			toHundredEven++;
+			if (toHundredEven % 2 == 0) {
+				System.out.println(toHundredEven);
+			} 
+		}
+		
+		//EXERCISE 30
+		System.out.println();
+		
+		int num = 1;
+		int maxNum = Integer.parseInt(reader.next());
+		
+		while (num >= maxNum) {
+			System.out.println(num);
+			num++;
+		}
+		
+	}	
+}

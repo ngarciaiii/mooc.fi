@@ -1,0 +1,33 @@
+package week2;
+
+import java.util.Scanner;
+
+public class week2_ex32_35{
+	public static void main(String[] args) {
+		Scanner reader = new Scanner(System.in);
+		
+		//EXERCISE 32
+		int count = 0;
+		int sum = 0;
+		
+		System.out.print("Until what? ");
+		int n = Integer.parseInt(reader.nextLine());
+		
+		while (count <= n) {
+			System.out.println(count);
+			count++;
+			
+			System.out.println(sum);
+			sum += count;
+		}
+		
+		//EXERCISE 33
+		System.out.println();
+		
+		System.out.print("First number: ");
+		int num1 = Integer.parseInt(reader.nextLine());
+		
+		System.out.print("Second number: ");
+		int num2 = Integer.parseInt(reader.nextLine());
+	}
+}

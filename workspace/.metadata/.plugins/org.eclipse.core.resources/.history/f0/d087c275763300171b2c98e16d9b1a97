@@ -1,0 +1,17 @@
+package week2;
+
+import java.util.Scanner;
+
+public class week2_ex27_31{
+	public static void main(String[] args){
+		
+		Scanner reader = new Scanner(System.in);
+		
+		int atHundred = 1;
+		
+		while (atHundred <= 100) {
+			System.out.println(atHundred);
+			atHundred++;
+		}
+	}
+}

@@ -20,7 +20,7 @@ public class week1_ex08_12 {
 		System.out.println("Division: " + divAns + System.lineSeparator());
 		
 		System.out.print("Type the radius: ");
-		double radius = Integer.parseInt(reader.nextLine());
+		double radius = Double.parseDouble(reader.nextLine());
 		
 		double circumference = 2 * Math.PI * radius;
 		
