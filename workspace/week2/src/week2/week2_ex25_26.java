@@ -34,8 +34,6 @@ public class week2_ex25_26{
 		System.out.println();
 		System.out.print("Enter number to add: "); 
 		
-	
-		
 		while(true) {
 			int read1 = Integer.parseInt(reader.nextLine());
 			if (read1 == 0) {

@@ -1,0 +1,19 @@
+package week2;
+
+import java.util.Scanner;
+
+public class week2_ex39_42{
+	
+	private static void printStars(String star, int amount) {
+		int i = 0;
+		star = "*";
+		while(i <  amount) {		
+			System.out.print(star);
+		}
+	}
+	
+	public static void main(String[] args) {
+		printStars(3);
+	}
+
+}

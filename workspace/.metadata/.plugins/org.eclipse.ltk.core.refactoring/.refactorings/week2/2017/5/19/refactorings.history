@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;week2/src/week2/week2_ex36_38.java&apos; to &apos;week2_ex36.java&apos;" description="Rename resource &apos;week2_ex36_38.java&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/week2/week2_ex36_38.java" name="week2_ex36.java" stamp="1494270282026" updateReferences="true"/>
+</session>
