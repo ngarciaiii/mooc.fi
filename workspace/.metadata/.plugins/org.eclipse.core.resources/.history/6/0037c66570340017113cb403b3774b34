@@ -1,0 +1,48 @@
+package week2;
+
+import java.util.Scanner;
+
+public class week2_ex39_42{
+	
+	private static void printStars(int amount) {
+		int i = 0;
+		while(i < amount) {
+			System.out.print("*");                          
+			i++;
+		} System.out.println();
+	}
+	
+	public static void printSquare(int sideSize){
+		int per = 0;
+		while (per < sideSize) {
+			printStars(sideSize);
+			per++;
+		} System.out.println();
+	}
+	
+	public static void printRectangle(int width, int height) {
+		int sq = 0;
+		while (sq < height) {
+			printStars(width);
+			sq++;
+		} System.out.println();
+	}
+	
+	public static void printTriangle(int size) {
+		int ft = 0;
+		while (ft <= size) {
+			printStars(ft);
+			ft++;
+		}
+	}
+	
+	public static void main(String[] args) {
+		printStars(5);
+		printStars(3);
+		printStars(9);
+		System.out.println();
+		printSquare(4);
+		printRectangle(17, 3);
+		printTriangle(4);
+	}
+}
