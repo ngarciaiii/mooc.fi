@@ -1,0 +1,56 @@
+package week2;
+
+import java.util.Scanner;
+
+public class week2_ex41{
+	
+//	public static void drawNumber(int ans) {
+//		int max = 100;
+//		int min = 1;
+//		int theAns =(int )(Math.random() * 100 + 1); 
+//		System.out.println(ans);
+//		
+//		
+//	}
+//	
+//	public static void guessTheNum (int guess) {
+//		Scanner reader = new Scanner(System.in);
+//		System.out.print("Guess a number: ");
+//		guess = Integer.parseInt(reader.nextLine());
+//	}
+	
+	
+	public static void main(String[] args){
+		Scanner reader = new Scanner(System.in);
+		
+		int max = 100;
+		int min = 1;
+		int theAns =(int )(Math.random() * 100 + 1); 
+		System.out.println(theAns);
+		System.out.println();
+		
+		int guesses = 4;
+		System.out.print("Guess a number (5 guesses): ");
+		int guess = Integer.parseInt(reader.nextLine());
+		
+		while (guess != theAns && guesses > 0) {
+			System.out.print(guesses + " guesses left, try again: ");
+			guess = Integer.parseInt(reader.nextLine());
+			guesses--;
+			if (guess > theAns) {
+				System.out.println("The guessing number is greater.");
+			} else {
+				System.out.println("The guessing number is lesser.");
+			}
+			
+			if (guess == theAns) {
+				System.out.println();
+				System.out.println("You have guessed it! The drawn number is: " + theAns);
+				break;
+			} else if (guesses == 0) {
+				System.out.println();
+				System.out.println("Sorry, your guesses have ran out!");
+			}
+		}
+	}
+}

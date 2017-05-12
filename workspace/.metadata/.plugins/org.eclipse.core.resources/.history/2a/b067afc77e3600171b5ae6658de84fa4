@@ -1,0 +1,20 @@
+package week2;
+
+import java.util.Scanner;
+
+public class week2_ex41{
+	
+//	public static void theAnswer(int ans) {
+//		Random rand = new Random();
+//		int ans = rand.nextInt(101)
+//	}
+//	
+	public static void main(String[] args){
+		Scanner reader = new Scanner(System.in);
+		int max = 100;
+		int min = 1;
+		double theNumber = Math.random() * 100 + 1; 
+		System.out.println(theNumber);
+		
+	}
+}

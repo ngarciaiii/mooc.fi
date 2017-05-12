@@ -1,0 +1,86 @@
+package week2;
+
+import java.util.Scanner;
+
+public class week2_ex41{
+	
+	// Generates a random number
+	public static int drawNumber() {
+		int max = 100;
+		int min = 1;
+		int num =(int )(Math.random() * 100 + 1); 
+		System.out.println(num);
+		return num;
+	}
+
+	public static int guessTheNum () {
+		Scanner reader = new Scanner(System.in);
+		System.out.print("Guess a number: ");
+		int guess = Integer.parseInt(reader.nextLine());
+		return guess;
+	}
+	
+	public static boolean checkGuess(int guess, int num) {
+		if (guess == num) {
+			System.out.println("You have guessed it!");
+			return true;
+		} else if (guess > num) {
+			System.out.println("The guessing number is greater.");
+			return false;
+		} else {
+			System.out.println("The guessing number is lesser.");
+			return false;
+		}
+	}
+	
+	public static void main(String[] args){
+		int num = drawNumber();
+		System.out.println();
+		int guesses = 5;
+		while(guesses > 0) {
+			int guess = guessTheNum();
+			boolean correct = checkGuess(guess, num);
+			if (correct) {
+				break;
+			}
+			guesses--;
+			System.out.println("You have " + guesses + " guesses left");
+			System.out.println();
+		}
+	}
+	
+//	public static void main(String[] args){
+//		Scanner reader = new Scanner(System.in);
+//		
+//		int max = 100;
+//		int min = 1;
+//		int theAns =(int )(Math.random() * 100 + 1); 
+//		System.out.println(theAns);
+//		System.out.println();
+//		
+//		int guesses = 4;
+//		System.out.print("Guess a number (5 guesses): ");
+//		
+//		while (guesses > 0) {
+//			int guess = Integer.parseInt(reader.nextLine());
+//			guesses--;
+//			
+//			if (guess != theAns){ 
+//				if (guess > theAns) {
+//					System.out.println("The guessing number is greater.");
+//					System.out.println("Try again! " + guesses + "left: ");
+//				} else {
+//					System.out.println("The guessing number is lesser.");
+//					System.out.println("Try again! " + guesses + " guesses left: ");
+//				}
+//			} else if (guess == theAns) {
+//					System.out.println();
+//					System.out.println("You have guessed it! The drawn number is: " + theAns);
+//					break;
+//			} else if (guesses == 0) {
+//				System.out.println();
+//				System.out.println("Sorry, your guesses have ran out!");
+//			}
+//		}
+//	}
+}
