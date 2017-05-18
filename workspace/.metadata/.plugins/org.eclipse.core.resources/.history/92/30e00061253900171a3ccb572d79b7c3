@@ -33,13 +33,17 @@ public class week1_ex19_21 {
 		String password = reader.nextLine();
 		
 		
-		if ((username.equals(username1) && password.equals(password1)) || (username.equals(username2) && password.equals(password2))){
+		if (username.equals(username1) && password.equals(password1)) {
+			System.out.println("You are now logged in!");
+		} else if (username.equals(username2) && password.equals(password2)) {
 			System.out.println("You are now logged in!");
 		} else {
 			System.out.println("Your username or password is invalid.");
 		}
 		
 		//EXERCISE 21
+		
+		
 		
 		System.out.println();
 		

@@ -65,7 +65,7 @@ public class week2_ex32_35{
 		int power = Integer.parseInt(reader.nextLine());
 		
 		int result = (int)Math.pow(2, power);
-		System.out.println("The result is " + result);
+		System.out.println(result);
 		
 	}
 }

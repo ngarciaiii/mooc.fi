@@ -40,7 +40,6 @@ public class week2_ex25_26{
 				break;
 			} else {
 				sum1 = sum1 + read1;
-				//sum1 += read1;
 				System.out.println("Sum now: " + sum1);
 			}
 		} System.out.println("Sum in the end: " + sum1);

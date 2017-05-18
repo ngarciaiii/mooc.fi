@@ -45,7 +45,7 @@ public class week2_ex39_40{
 	}
 	
 	public static void printTriangle(int size) {
-		int i = 1;
+		int i = 0;
 		while(i <= size) {
 			printWhitespace(size - i);
 			printStars(i);
@@ -54,7 +54,7 @@ public class week2_ex39_40{
 	}
 	
 	public static void xmasTree(int height) {
-		int i = 1;
+		int i = 0;
 		while (i <= height) {
 			printWhitespace(height - i);
 			printStars(2 * i - 1);
@@ -69,10 +69,16 @@ public class week2_ex39_40{
 	}
 	
 	public static void main(String[] args) {
-        printTriangle(5);
-        System.out.println("---");
-        xmasTree(4);
-        System.out.println("---");
-        xmasTree(10);
+		printStars(5);
+		printStars(3);
+		printStars(9);
+		System.out.println();
+		printSquare(4);
+		printRectangle(17, 3);
+		printWhitespace(4);
+		System.out.println();
+		printTriangle(4);
+		System.out.println();
+		xmasTree(10);
 	}
 }

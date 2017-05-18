@@ -41,6 +41,8 @@ public class week1_ex19_21 {
 		
 		//EXERCISE 21
 		
+		
+		
 		System.out.println();
 		
 		System.out.print("Enter the year: ");

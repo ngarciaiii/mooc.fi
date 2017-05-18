@@ -1,0 +1,22 @@
+package week2;
+
+import java.util.Scanner;
+
+public class week2_ex42 {
+	
+	public static boolean gameOn() {
+		if (true) {
+			System.out.println("************");
+	        System.out.println("* Hangman *");
+	        System.out.println("************");
+		} (false) {
+			System.out.println("-------------");
+	        System.out.println("-  OFFLINE  -");
+	        System.out.println("-------------");
+		}
+	}
+	
+	public static void main(String[] args) {
+		
+	}
+}

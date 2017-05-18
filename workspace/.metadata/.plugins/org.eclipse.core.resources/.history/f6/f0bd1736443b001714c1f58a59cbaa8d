@@ -54,7 +54,7 @@ public class week2_ex39_40{
 	}
 	
 	public static void xmasTree(int height) {
-		int i = 1;
+		int i = 0;
 		while (i <= height) {
 			printWhitespace(height - i);
 			printStars(2 * i - 1);

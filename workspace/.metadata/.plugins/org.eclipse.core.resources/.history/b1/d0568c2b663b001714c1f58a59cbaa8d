@@ -1,0 +1,27 @@
+package week2;
+
+import java.util.Scanner;
+
+public class week2_ex42 {
+	
+	public static void gameOn(String ans) {
+		Scanner reader = new Scanner(System.in);
+
+		System.out.print("Start the game? (y/n)");
+		ans = reader.nextLine();
+		
+		if (ans == "y") {
+			System.out.println("************");
+	        System.out.println("* Hangman *");
+	        System.out.println("************");
+		} else if (ans == "n") {
+			System.out.println("-------------");
+	        System.out.println("-  OFFLINE  -");
+	        System.out.println("-------------");
+		}
+	}
+	
+	public static void main(String[] args) {
+			gameOn();
+	}
+}

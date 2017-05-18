@@ -29,16 +29,12 @@ public class week2_ex32_35{
 		System.out.print("Last: ");
 		int num2 = Integer.parseInt(reader.nextLine());
 		
-		int sum1 = 0;
+		while (num1 <= num2) {
+			num1 += num1;
+			num1++;
+		}
 		
-        while (num1 <= num2) {
-            sum1 += num1;
-            num1++;
-
-            System.out.println(num1);
-        }
-		
-		System.out.println("The sum is " + (sum1));
+		System.out.println("The sum is " + (num1 + num2));
 		
 		
 		
@@ -65,7 +61,7 @@ public class week2_ex32_35{
 		int power = Integer.parseInt(reader.nextLine());
 		
 		int result = (int)Math.pow(2, power);
-		System.out.println("The result is " + result);
+		System.out.println(result);
 		
 	}
 }
