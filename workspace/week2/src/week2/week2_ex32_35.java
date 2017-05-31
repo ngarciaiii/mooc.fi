@@ -63,9 +63,15 @@ public class week2_ex32_35{
 		
 		System.out.print("Type a power number: ");
 		int power = Integer.parseInt(reader.nextLine());
+		int sum2 = 0;
+		while (power >= 0) {
+			int result = (int)Math.pow(2, power);
+			System.out.println("The result is " + result);
+			sum2 += result;
+			power--;
+		}
 		
-		int result = (int)Math.pow(2, power);
-		System.out.println("The result is " + result);
+
 		
 	}
 }
