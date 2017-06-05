@@ -8,13 +8,13 @@ public class Words {
         Scanner reader = new Scanner(System.in);
         ArrayList<String> words = new ArrayList<String>();
         while (true) {
-        System.out.print("Type a word: ");
-        String word = reader.nextLine();
-            if (word.isEmpty()) {
-                break;
-            } else {
-                words.add(word);
-            }
+	        System.out.print("Type a word: ");
+	        String word = reader.nextLine();
+	            if (word.isEmpty()) {
+	                break;
+	            } else {
+	                words.add(word);
+	            }
         } 
         System.out.println("You typed the following words: ");
         int list = 0;
@@ -23,7 +23,7 @@ public class Words {
             list++;
         }
     }
-    s   
+       
 //  MOOC solution:    
 //  public static void main(String[] args) {
 //      Scanner reader = new Scanner(System.in);

@@ -1,0 +1,26 @@
+package week3;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class RecurringWords {
+	public static void main(String[] args) {
+		Scanner reader = new Scanner(System.in);
+		ArrayList<String> words = new ArrayList<String>();
+		while (true) {
+			System.out.print("Type a word: ");
+			String word = reader.nextLine();
+				words.add(word);
+				int added = 1;
+				while (added < words.size()){
+					words.get(added);
+					added++;
+				}
+				
+				if (word.equals(words.indexOf(words.get(added)))) {
+					System.out.print("You gave the word " + word + " twice");
+					break;
+				}
+		}
+	}
+}
