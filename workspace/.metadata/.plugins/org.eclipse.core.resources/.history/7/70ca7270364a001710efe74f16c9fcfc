@@ -1,0 +1,40 @@
+package week3;
+
+import java.util.Scanner;
+
+public class Palindrome{
+	public static boolean palindrome(String text){
+		String firstHalf = "";
+		for (int i = 0; i < text.length()/2; i++) {
+			char letter = text.charAt(i);
+			firstHalf = firstHalf + letter;
+			System.out.println(firstHalf);
+		}
+		
+		String secHalf = "";
+		for (int i = text.length(); i > text.length()/2; i--) {
+			char letter = text.charAt(i);
+			secHalf = secHalf + letter;
+			System.out.println(secHalf);
+		}
+		
+		if (firstHalf.equals(secHalf)) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+	
+	
+	public static void main(String[] args){
+		Scanner reader = new Scanner(System.in);
+		System.out.println("Type a text: ");
+		String text = reader.nextLine();
+		if (palindrome(text)) {
+			System.out.println("The text is a palindrome!");
+		} else {
+			System.out.println("The text is not a palindrome!");
+		}
+		
+	}
+}
