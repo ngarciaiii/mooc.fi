@@ -13,7 +13,10 @@ public class TheEndPart {
         int i = Integer.parseInt(reader.nextLine());
         
         int j = word.length() - i;
-//        System.out.println(j);
+        System.out.println(j);
+        
+        System.out.println(word.substring(i));
+        System.out.println(word.substring(j));
         
         System.out.println("Result: " + word.substring(j));
     }
