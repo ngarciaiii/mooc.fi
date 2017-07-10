@@ -1,5 +1,5 @@
 /*
-* Another file Main.java used to support PasswordRandomizer.java looks like this:
+* Another file Main.java used to support Dice.java looks like this:
 * 
 public class Program {
     public static void main(String[] args) {
