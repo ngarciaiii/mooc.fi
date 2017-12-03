@@ -1,6 +1,4 @@
-/*
- * Another file Main.java used to support Multiplier.java looks like this:
- *
+
 public class Main {
 
     public static void main(String[] args) {
@@ -13,21 +11,5 @@ public class Main {
 
         System.out.println("threeMultiplier.multiply(1): " + threeMultiplier.multiply(1));
         System.out.println("fourMultiplier.multiply(1): " + fourMultiplier.multiply(1));
-    }
-}
-*
-*/
-
-
-public class Multiplier {
-    private int num;
-
-    public Multiplier(int number){
-       this.num = number;
-    }
-
-    public int multiply(int otherNumber){
-        otherNumber = num * otherNumber;
-        return otherNumber;
     }
 }
